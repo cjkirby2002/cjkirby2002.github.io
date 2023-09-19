@@ -1,0 +1,14 @@
+p {
+    color: darkmagenta;
+}
+.test-class {
+    color: hotpink;
+    font-size: x-large;
+}
+h1 {
+    color: dodgerblue;
+}
+
+#test-id {
+    color: magenta;
+}
