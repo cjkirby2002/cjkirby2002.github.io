@@ -1,0 +1,130 @@
+/* General styles - put these straight into your stylesheet */
+
+body {
+    margin: 0;
+  }
+  
+  html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 10px;
+    background-color: #ccc;
+  }
+  .card {
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: red;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+  }
+
+  .card article img {
+    max-height: 100%;
+    float: right;
+  }
+  .card article p {
+    padding: 1em;
+  }
+  .card header {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+    border-radius: 1.5em 1.5em 0 0;
+    height: 3em;
+    padding: 1em;
+  }
+
+  .card footer {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+    border-radius: 0 0 1.5em 1.5em;
+    height: 3em;
+    padding: 1em;
+  }
+
+  .card footer p {
+    font-size: 1.5em;
+  }
+
+  .card article {
+    height: 12em;
+    background-color:rgb(17, 17, 17, 0.362);
+    color: lightgray;
+    padding: 0em;
+  }
+
+
+  header,footer {
+    height: 5em;
+    padding: 1em;
+  }
+
+  h2, p{
+    margin: 0;
+  }
+
+  h2{
+    font-size: 2em;
+    line-height: 1.5em;
+
+
+
+  }
+/* MY CARD */
+  html .mycard {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    background-color: #ccc;
+  }
+
+  .mycard {
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+  }
+
+  .mycard article img {
+    max-height: 100%;
+    float: right;
+  }
+  .mycard header {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+    border-radius: 1.5em 1.5em 0 0;
+    height: 3em;
+    padding: 1em;
+  }
+
+  .mycard footer {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+    border-radius: 0 0 1.5em 1.5em;
+    height: 3em;
+    padding: 1em;
+  }
+
+  .mycard article {
+    height: 12em;
+    background-color: rgb(91, 80, 164);
+    color: lightgrey;
+    padding: 0em;
+  }
+
+  .mycard article p {
+    padding: 1em;
+  }
+
+  header,footer {
+    height: 5em;
+    padding: 1em;
+  }
+
+  h2, p{
+    margin: 0;
+  }
+
+  h2{
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+
+  .mycard footer p {
+    font-size: 1.5em;
+  }
