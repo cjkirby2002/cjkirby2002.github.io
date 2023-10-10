@@ -1,0 +1,41 @@
+#box1 {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    background-color: gold;
+    border-radius: 1em;
+    z-index: 1;
+}
+
+#box2 {
+    position: fixed;
+    top: 50px;
+    left: 150px;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+    z-index: 1;
+}
+
+#box3 {
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    background-color: white;
+    width: 10em;
+    height: 5em;
+    z-index: 0;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.img {
+    position: absolute;
+    width: 1080px;
+    height: 300px;
+}
+
+.body {
+    background-image: url(../CU\ Football.jpeg);
+}
+
