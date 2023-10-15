@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+  .element {
+    width: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .container {
+    flex-direction: column;
+  }
+
+  .element {
+    width: 100%;
+  }
+}
+body {
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+  }
+
+  img {
+      max-width: 100%;
+      display: block;
+      float: left;
+      padding: 0;
+  }
+  
+  .logo {
+    font-size: 200%;
+    padding: 50px 20px;
+    margin: 0 auto;
+    max-width: 980px;
+  }
+  
+  .grid {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 980px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav {
+    background-color: #000;
+    padding: .5em;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
+  
+  .photos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-flow: column;
+    column-count: 2;
+    column-gap: 1px;
+    row-gap: 1px;
+    width: 150%;
+  }
+
+  .feature {
+      width: 200px;
+      padding: 0em .5em 0em 0em;
+    
+  }
+
+  
