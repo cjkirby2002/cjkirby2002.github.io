@@ -35,10 +35,15 @@ body {
         right: 10%;
     }
 
+    .intromobile {
+        display: none;
+    }
+
     .abtbtn {
         padding: 16px;
         background-color: pink;
         font-size: 16px;
+        border-radius: 25px;
     }
     .buttonintro {
         position: relative;
@@ -52,6 +57,7 @@ body {
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
+        border-radius: 25px;
     }
 
     .intro a {
@@ -61,6 +67,7 @@ body {
         display: block;
         width: 200px;
         text-align: left;
+        border-radius: 25px;
     }
 
 
@@ -225,46 +232,37 @@ body {
         right: 10%;
     }
 
+    .intro {
+        display: none;
+    }
+
     .abtbtn {
+        display: none;
         padding: 16px;
         background-color: pink;
         font-size: 16px;
     }
     .buttonintro {
+        display: none;
         position: relative;
         display: inline-block;
     }
 
-    .intro {
-        display: none;
-        position: absolute;
+    .intromobile{
+        position: sticky;
         background-color: pink;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
-    }
-
-    .intro a {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-        width: 200px;
         text-align: left;
+        border-radius: 25px;
     }
 
 
-    .abtbtn:active {
-        background-color: lightpink; 
-}
-
-    .abtbtn:active + .buttonintro .intro {
-        display: block;
-}
-
-    .abtbtn:active + .buttonintro .intro a {
-        background-color: pink; 
-}
     
 
 
