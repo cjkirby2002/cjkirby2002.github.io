@@ -254,13 +254,17 @@ body {
     }
 
 
-    .intro a:active {
-        background-color: pink;
-    }
+    .abtbtn:active {
+        background-color: lightpink; 
+}
 
-    .buttonintro:active .intro {
+    .abtbtn:active + .buttonintro .intro {
         display: block;
-    }
+}
+
+    .abtbtn:active + .buttonintro .intro a {
+        background-color: pink; 
+}
     
 
 
