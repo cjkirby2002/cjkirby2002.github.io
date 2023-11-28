@@ -36,31 +36,33 @@
 
     fetch(requestURL)
     .then(response => response.json())
-    .then(text => displayCatInfo(data))
+    .then(data => displayCatInfo(data))
 
-    function displayCatInfo(catString) {
+    function displayCatInfo(catData) {
       let total = 0;
       let male = 0;
     
-      // Add your code here
+       catData.forEach(motherCat => {
+        motherInfo += motherCat.name + ', ';
 
-      const motherCats = catData.mother_cats.map (cat => cat.name);
-      motherInfo += motherCats.join (', ');
 
-      catData.mother_cats.forEach(cat => {
-        total += cat.kittens.length;
-        cat.kittens.forEach (kitten => {
-          if (kitten.gender === 'male') {
+        motherCat.kittens.forEach(kitten => {
+          total++;
+          if (kitten.gender === 'm') {
             male++;
           }
         });
-        
       });
 
-      kittenInfo = 'There are ${total} kittens, ${male} male and ${total - male} female.';
+
+      motherInfo = motherInfo.slice(0, -2); 
+      const lastCommaIndex = motherInfo.lastIndexOf(','); 
+      motherInfo = motherInfo.slice(0, lastCommaIndex) + ' and' + motherInfo.slice(lastCommaIndex + 1);
+
+  
+      kittenInfo = `There are ${total} kittens, ${male} male and ${total - male} female.`;
 
       // Don't edit the code below here!
-
       para1.textContent = motherInfo;
       para2.textContent = kittenInfo;
     }
