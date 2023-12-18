@@ -1,22 +1,13 @@
 @font-face {
     font-family: myFont;
-    src: url(../js-project/KeeponTruckin2.ttf);
-  }
+    src: url(../js-project/aptos.ttf);
+}
 
-  @font-face {
-    font-family: regFont;
-    src: url(../js-project/pike-bold\ copy.otf);
-  }
-  @font-face {
-    font-family: buttonFont;
-    src: url(../js-project/landergrandereg.otf);
-  }
 body {
     background-color: rgb(200, 207, 236);
-    font-family: regFont;
-
-    
+    font-family: myFont;
 }
+
 h1 {
     font-family: myFont;
     text-align: center;
@@ -33,63 +24,72 @@ h1 {
     text-align: center;
     z-index: 1000;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center; /* Changed from align-items: flex-start; */
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     background: rgb(101, 125, 219);
     border-radius: 2em;
 }
 
-.generateButton {
+.generateButton,
+.saveButton,
+.submitButton,
+.saveAllButton {
     border-radius: 1em;
-    background-color: rgb(169, 60, 208);
-    font-family: buttonFont;
-}
-
-.saveButton {
+    margin-top: 10px;
     background-color: rgb(101, 125, 219);
-    border-radius: 1em;
-    font-family: buttonFont;
+    font-family: myFont;
 }
 
 .generator {
     margin: .5em;
-    width: 50%; 
-    float: left;
-    /* text-align: center; */
-    position: static;
+    padding: 1em;
 }
 
 #savedNumbers {
-    width: 30%;
-    margin-top: 20px;
-    float: right;
-    
+    margin: 200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 #savedNumberList {
     list-style-type: none;
     padding: 0;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     background-color: rgb(216, 193, 227);
     font-size: 150%;
     justify-content: center;
-
 }
 
 #savedNumberList li {
-    display: inline-block; 
-    margin-right: 2px; 
-
+    display: inline-block;
+    margin-right: 2px;
 }
 
-.generateButton,
-.saveButton {
-    margin-top: 10px;
+.submitButton {
+    text-align: center; /* Added for centering text */
+    flex: content;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
-.areaCode {
-    background-color: azure;
+/* Optional: Add a class to center buttons within a container */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Apply the 'center-container' class to containers that need centering */
+.center-button {
+    /* Add 'center-container' class to center the button */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
